@@ -115,6 +115,10 @@ h3 {
   background-color: var(--main-color);
   color: var(--secondary-color);
 }
+.cta-main a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
 
 .cta-sec {
   background-color: var(--secondary-color);
