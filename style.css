@@ -232,7 +232,7 @@ h3 {
   }
 }
 
-@media (max-width: 1000px) {
+@media (min-width: 1000px) {
   body {
     padding: 0%;
   }
@@ -241,7 +241,7 @@ h3 {
     font-size: 1rem;
   }
 }
-@media (max-width: 2000px) {
+@media (min-width: 1400px) {
   body {
     padding: 0%;
   }
