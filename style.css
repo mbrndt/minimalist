@@ -16,9 +16,12 @@
 html,
 body {
   height: 100%;
+  overflow-x: hidden;
 }
+
 body {
   font-family: "Poppins", sans-serif;
+  position: relative;
   overflow-x: hidden;
 }
 
@@ -210,11 +213,15 @@ h3 {
   .about img {
     width: 100%;
   }
+  body {
+    overflow-x: hidden;
+  }
 }
 
 @media screen and (min-width: 768px) {
   body {
     padding: 10%;
+    overflow-x: hidden;
   }
   .videos {
     display: flex;
