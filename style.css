@@ -178,3 +178,81 @@ h3 {
   border-radius: 1rem;
   margin-top: 2rem;
 }
+@media (max-width: 480px) {
+  .selling-point h3 {
+    font-size: 1.5rem;
+  }
+  .selling-point h2 {
+    font-size: 2rem;
+  }
+  .selling-point p {
+    font-size: 1rem;
+  }
+  .classes {
+    font-size: 1rem;
+  }
+  .classes h2 {
+    font-size: 1.5rem;
+  }
+  .classes h3 {
+    font-size: 1.5rem;
+  }
+  .about h2 {
+    font-size: 2rem;
+  }
+  .about p {
+    font-size: 1rem;
+  }
+  .about img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    padding: 10%;
+  }
+  .videos {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .about img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 1000px) {
+  body {
+    padding: 0%;
+  }
+
+  .about {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 2000px) {
+  body {
+    padding: 0%;
+  }
+
+  .about {
+    font-size: 1rem;
+  }
+
+  .about img {
+    width: 45%;
+    padding: 5%;
+  }
+  .videos {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+  }
+}
