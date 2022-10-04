@@ -4,7 +4,7 @@ burger.addEventListener("click", () => {
   if (burger.classList.contains("active")) {
     gsap.to(".links", { x: "100%", duration: 0.5 });
     gsap.to(".line", { stroke: "white", duration: 0.5 });
-    gsap.set("body", { overflow: "auto" });
+
     gsap.set("body", { overflow: "hidden" });
   } else {
     gsap.to(".links", { x: 0, duration: 0.5 });
