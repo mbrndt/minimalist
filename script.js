@@ -4,6 +4,8 @@ burger.addEventListener("click", () => {
   if (burger.classList.contains("active")) {
     gsap.to(".links", { x: "100%", duration: 0.5 });
     gsap.to(".line", { stroke: "white", duration: 0.5 });
+    gsap.set("body", { overflow: "auto" });
+    gsap.set("body", { overflow: "hidden" });
   } else {
     gsap.to(".links", { x: 0, duration: 0.5 });
     gsap.to(".line", { stroke: "black", duration: 0.5 });
@@ -12,6 +14,32 @@ burger.addEventListener("click", () => {
       { opacity: 0, y: 0 },
       { opacity: 1, y: 20, delay: 0.25, stagger: 0.25 }
     );
+    gsap.set("body", { overflow: "hidden" });
   }
   burger.classList.toggle("active");
+});
+
+const videos = gsap.utils.toArray("video");
+gsap.set(videos, { opacity: 0 });
+
+videos.forEach((video) => {
+  ScrollTrigger.create({
+    trigger: video,
+    start: "top center",
+    end: "bottom center",
+    markers: false,
+    onEnter: () => {
+      gsap.to(video, { opacity: 1 });
+      video.play();
+    },
+    onEnterBack: () => {
+      video.play();
+    },
+    onLeave: () => {
+      video.pause();
+    },
+    onLeaveBack: () => {
+      video.pause();
+    },
+  });
 });
